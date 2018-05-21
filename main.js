@@ -96,3 +96,4 @@ binaryTree.getObj();
 
 log(
     binaryTree.getAge(40) 
+)
