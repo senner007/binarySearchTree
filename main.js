@@ -78,26 +78,21 @@ var binaryTree = (function binaryTree () {
 
 }());
 
-// log(
-//     binaryTree.getUser("jne") // false
-// )
+binaryTree.put("sam", "Samuel", 50) 
 
-binaryTree.put("sam", "Samuel", 50) // false
+binaryTree.put("snn", "Senner", 24) 
 
-binaryTree.put("snn", "Senner", 24) // false
-
-binaryTree.put("ant", "Anton", 18) // false
-binaryTree.put("smn", "Simone", 40) // false
-
-// log(
-//     binaryTree.getAge(18) // false
-// )
-// log(
-//     binaryTree.getUser("ant") // false
-// )
-
- binaryTree.getObj();
+binaryTree.put("ant", "Anton", 18) 
+binaryTree.put("smn", "Simone", 40) 
 
 log(
-    binaryTree.getAge(40) // false
+    binaryTree.getAge(18) 
 )
+log(
+    binaryTree.getUser("ant")
+)
+
+binaryTree.getObj();
+
+log(
+    binaryTree.getAge(40) 
