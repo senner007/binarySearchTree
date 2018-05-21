@@ -86,14 +86,14 @@ binaryTree.put("ant", "Anton", 18)
 binaryTree.put("smn", "Simone", 40) 
 
 log(
-    binaryTree.getAge(18) 
+    binaryTree.getAge(50) // Samuel 
 )
 log(
-    binaryTree.getUser("ant")
+    binaryTree.getUser("ant") // "Anton", left undefined, right undefined
 )
 
-binaryTree.getObj();
+// binaryTree.getObj();
 
 log(
-    binaryTree.getAge(40) 
+    binaryTree.getAge(40) // Simone
 )
