@@ -70,9 +70,8 @@ var binaryTree = (function binaryTree () {
         getAge : function (age) {
             return findNode(rootNode, age);
         },
-        put : function (abbr, name, age) {
-            if (this.getAge(age)) return false;        
-            return putNode(rootNode, abbr, name, age);   
+        put : function (abbr, name, age) {     
+            return !obj[abbr] ? putNode(rootNode, abbr, name, age) : false
         }
     }
 
@@ -89,7 +88,7 @@ log(
     binaryTree.getAge(50) // Samuel 
 )
 log(
-    binaryTree.getUser("ant") // "Anton", left undefined, right undefined
+    binaryTree.getUser("ant") // value : { name "Anton", age : 18 }, left : undefined, right : undefined
 )
 
 // binaryTree.getObj();
